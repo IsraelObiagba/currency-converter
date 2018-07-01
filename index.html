@@ -23,20 +23,23 @@
 	<!-- CSS Reset -->
 	<link href="assets/css/minireset.min.css" rel="stylesheet">
 
+	<!-- IndexDB Library -->
+	<script src="https://unpkg.com/idb@2.0.4/lib/idb.js"></script>
+
 	<!-- Page Style -->
 	<link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 <body>
-	<main class="app-container">
+	<main class="app-container" id="app">
 		<div class="app-logo">
 			<img src="assets/img/logo.png"
 				 class="app-icon"
 				 alt="icon">
 		</div>
 		<div class="app-result">
-			<p class="app-num">234676</p>
-			<p class="app-currency">usd</p>
+			<p class="app-num" id="is-converted">234676</p>
+			<p class="app-currency" id="is-currency-code">usd</p>
 		</div>
 		<div class="app-io">
 			<div class="app-input-group">
@@ -47,20 +50,18 @@
 				<label for="is-currency1">from</label>
 				<select name="convert-from" class="app-select" id="is-currency1">
 					<option value="--">pick currency</option>
-					<option value="usd">usd</option>
-					<option value="eur">eur</option>
 				</select>
 			</div>
 			<div class="app-input-group">
 				<label for="is-currency2">to</label>
 				<select name="convert-to" class="app-select" id="is-currency2">
 					<option value="--">pick currency</option>
-					<option value="usd">usd</option>
-					<option value="eur">eur</option>
 				</select>
 			</div>
-			<button class="app-btn">get convertion</button>
+			<button class="app-btn" id="is-btn">get convertion</button>
 		</div>
 	</main>
+
+	<script src="assets/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
