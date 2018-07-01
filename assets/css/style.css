@@ -2,17 +2,18 @@
 	transition: 0.2s ease-in-out;
 }
 
-html {
+/*html {
 	width: 100%;
 	height: 100%;
-}
+}*/
 
 body {
 	font-size:  100%;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
-	width:  100%;
-	height:  100%;
+	/*width:  100%;*/
+	/*height:  100%;*/
+	padding-top: 2em;
 	background: #F2F2F2;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2);
 	background: -o-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2);
